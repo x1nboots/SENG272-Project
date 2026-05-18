@@ -13,10 +13,7 @@ public class ISO15939Simulator {
     }
 }
 
-/*
- * Simple model class for one metric.
- * This keeps metric data separate from GUI code.
- */
+
 class Metric {
     private final String dimensionName;
     private final int dimensionCoefficient;
@@ -89,10 +86,7 @@ class Metric {
     }
 }
 
-/*
- * Scenario model class.
- * Each scenario has a mode, name, and a list of metrics.
- */
+
 class Scenario {
     private final String mode;
     private final String name;
@@ -117,11 +111,7 @@ class Scenario {
     }
 }
 
-/*
- * ScenarioRepository stores all hard-coded scenario data.
- * HashMap is used to group scenarios by mode.
- * ArrayList is used to store scenarios and metrics dynamically.
- */
+
 class ScenarioRepository {
     private final HashMap<String, ArrayList<Scenario>> scenariosByMode = new HashMap<>();
 
@@ -316,14 +306,7 @@ class MainFrame extends JFrame {
 
         add(cardPanel, BorderLayout.CENTER);
 
-        JPanel navigationPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 16, 12));
-        navigationPanel.setBorder(BorderFactory.createEmptyBorder(8, 10, 16, 10));
 
-
-
-
-
-        add(navigationPanel, BorderLayout.SOUTH);
 
         showStep("step1");
     }
@@ -357,11 +340,7 @@ class MainFrame extends JFrame {
         return label;
     }
 
-    private JButton createNavigationButton(String text) {
-        JButton button = new JButton(text);
-        button.setPreferredSize(new Dimension(160, 52));
-        return button;
-    }
+
 
     private JButton createLargeButton(String text) {
         JButton button = new JButton(text);
@@ -525,8 +504,6 @@ class MainFrame extends JFrame {
         healthRadio.addActionListener(e -> loadHealthScenarios.run());
         educationRadio.addActionListener(e -> loadEducationScenarios.run());
 
-        educationRadio.setSelected(true);
-        loadEducationScenarios.run();
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 16));
 
@@ -698,7 +675,7 @@ class MainFrame extends JFrame {
                 BorderFactory.createTitledBorder("Score Formula"),
                 BorderFactory.createEmptyBorder(12, 12, 12, 12)
         ));
-        formulaArea.setPreferredSize(new Dimension(430, 250));
+        formulaArea.setPreferredSize(new Dimension(500, 250));
 
         JButton backButton = createLargeButton("Back");
         JButton nextButton = createLargeButton("Next");
@@ -769,7 +746,7 @@ class MainFrame extends JFrame {
 
         JPanel radarPanel = new JPanel(new BorderLayout());
         radarPanel.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createTitledBorder("Radar Chart (Bonus Placeholder)"),
+                BorderFactory.createTitledBorder("Radar Chart"),
                 BorderFactory.createEmptyBorder(12, 12, 12, 12)
         ));
 
@@ -779,8 +756,7 @@ class MainFrame extends JFrame {
         radarText.setWrapStyleWord(true);
         radarText.setFont(new Font("Arial", Font.PLAIN, 21));
         radarText.setText(
-                "This area is reserved for the bonus radar chart.\n\n" +
-                        "If more time is available, this part can be implemented with Java 2D Graphics."
+                "Radar chart feature can be added here in a future version."
         );
 
         radarPanel.add(radarText, BorderLayout.CENTER);
@@ -837,7 +813,7 @@ class MainFrame extends JFrame {
         rowPanel.setBorder(BorderFactory.createEmptyBorder(12, 8, 12, 8));
 
         JLabel nameLabel = new JLabel(dimensionName + " - Score: " + String.format("%.2f", score));
-        nameLabel.setPreferredSize(new Dimension(280, 40));
+        nameLabel.setPreferredSize(new Dimension(500, 40));
         rowPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         nameLabel.setFont(new Font("Arial", Font.BOLD, 21));
 

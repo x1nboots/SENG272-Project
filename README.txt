@@ -44,6 +44,12 @@ Recent Updates:
 - Added validation controls and warning messages
 - Updated final screenshot and layout
 
+Recent Updates:
+- Improved user interface layout
+- Updated table and analysis screens
+- Added scenario-based data structure
+- Improved final screenshot
+
 Compilation Instructions:
 javac ISO15939Simulator.java
 
