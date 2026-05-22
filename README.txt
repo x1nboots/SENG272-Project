@@ -1,14 +1,27 @@
-Project Description:
-This project is a Java Swing desktop application that simulates the 5 core steps of the ISO/IEC 15939 software measurement process:
+# ISO15939Simulator
+
+ISO15939Simulator is a Java Swing-based desktop application developed for the SENG272 Software Engineering course project.
+
+The project simulates the 5 core steps of the ISO/IEC 15939 software measurement process through an interactive step-by-step wizard structure.
+
+---
+
+## Project Description
+
+This application demonstrates software measurement processes, weighted average analysis, score calculation, and gap analysis within a structured graphical user interface environment.
+
+The simulator follows the ISO/IEC 15939 measurement lifecycle:
+
 1. Profile
 2. Define
 3. Plan
 4. Collect
 5. Analyse
 
-The application follows a step-by-step wizard structure and demonstrates software measurement, score calculation, weighted average analysis, and gap analysis using an interactive graphical user interface.
+---
 
-Technologies Used:
+## Technologies Used
+
 - Java SE
 - Java Swing
 - AWT
@@ -18,43 +31,44 @@ Technologies Used:
 - HashMap
 - JProgressBar
 
-Features:
+---
+
+## Features
+
+- Step-by-step wizard interface
 - Profile information validation
-- Quality type and mode selection
 - Dynamic scenario selection
 - Scenario-based metric structure
-- Read-only planning table
 - Automatic score calculation
-- Weighted average calculation
+- Weighted average analysis
 - Gap analysis
-- Step indicator system
 - Progress bar visualization
-- Navigation with Back / Next buttons
-- Exit button on the Analyse screen
-- Large and user-friendly interface design
+- Read-only planning tables
+- Navigation using Back / Next buttons
+- Exit button on Analyse screen
+- User-friendly interface design
+- Validation controls and warning messages
 
-Recent Updates:
-- Improved overall UI design and alignment
-- Increased font, button, and textbox sizes
-- Improved weighted average visualization
-- Added larger and more readable table structure
-- Added ArrayList and HashMap usage
-- Improved scenario-based architecture
-- Enhanced step-by-step wizard flow
-- Added validation controls and warning messages
-- Updated final screenshot and layout
+---
 
-Recent Updates:
-- Improved user interface layout
-- Updated table and analysis screens
-- Added scenario-based data structure
-- Improved final screenshot
+## Recent Updates
 
-Compilation Instructions:
-javac ISO15939Simulator.java
+- Improved user interface alignment and spacing
+- Increased component readability
+- Enhanced analysis and score visualization panels
+- Improved navigation flow between steps
+- Updated scenario-based architecture
+- Added validation and warning systems
+- Improved table layouts and responsiveness
+- Updated screenshots and overall layout structure
 
-Run Instructions:
-java ISO15939Simulator
+---
 
-Screenshot:
-A screenshot of the running application is included in the repository.
+## Student Information
+
+- Student ID: 202528203
+- Course: SENG272
+- Presentation Video:
+  https://drive.google.com/file/d/1GSofA8c_vFJg4YefZduRSJzScEHIlbvm/view?usp=drivesdk
+
+
