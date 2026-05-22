@@ -70,5 +70,13 @@ The simulator follows the ISO/IEC 15939 measurement lifecycle:
 - Course: SENG272
 - Presentation Video:
   https://drive.google.com/file/d/1GSofA8c_vFJg4YefZduRSJzScEHIlbvm/view?usp=drivesdk
+  
+---
+
+## Development Notes
+
+This project was developed for educational purposes as part of the SENG272 Software Engineering course.
+
+AI-assisted tools were occasionally used during development for debugging support, interface refinement, and documentation improvement.
 
 
